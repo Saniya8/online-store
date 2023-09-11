@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +12,106 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.themes {
+  position: relative;
+}
+
+.themes-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: white;
+}
+
+.themes-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.themes:hover .themes-content {
+  display: block;
+}
+
+.themes-content a:hover {
+  background-color: #ddd;
+}
+
+.products {
+  position: relative;
+}
+
+.products-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: white;
+}
+
+.products-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.products:hover .products-content {
+  display: block;
+}
+
+.products-content a:hover {
+  background-color: #ddd;
+}
+
+.development {
+  position: relative;
+}
+
+.development-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: white;
+}
+
+.development-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.development:hover .development-content {
+  display: block;
+}
+
+.development-content a:hover {
+  background-color: #ddd;
+}
+
+.support {
+  position: relative;
+}
+
+.support-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: white;
+}
+
+.support-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.support:hover .support-content {
+  display: block;
+}
+
+.support-content a:hover {
+  background-color: #ddd;
 }
